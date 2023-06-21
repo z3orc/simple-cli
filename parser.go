@@ -82,8 +82,8 @@ func (root *Root) findCommand(name string) (*Command, error) {
 }
 
 func checkOption(name string, command *Command) error {
-	formattedName := strings.TrimPrefix(name, "-")
-	formattedName = strings.TrimPrefix(formattedName, "--")
+	formattedName := strings.TrimPrefix(name, "--")
+	formattedName = strings.TrimPrefix(formattedName, "-")
 
 	for _, v := range command.Options {
 		if v.Name == formattedName || v.ShortName == formattedName {
