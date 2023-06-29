@@ -51,7 +51,7 @@ func (root *Root) Parser() {
 	}
 	sortedCommandArgs = append(sortedCommandArgs, currentGroup)
 
-	fmt.Println(checkArgumentsCommand(command, sortedCommandArgs[0]))
+	// fmt.Println(checkArgumentsCommand(command, sortedCommandArgs[0]))
 
 	if len(commandArgs) > 0 {
 		for _, v := range sortedCommandArgs {
